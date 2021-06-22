@@ -17,7 +17,7 @@ Data wrangle
 
 meat %>%
  filter(IN >= 383L & IN <= 469L) %>%
- filter(PL >= 22.5 & PL <= 27.2) %>%
+ filter(PL >= 22.5 & PL <= 27.3) %>%
  ggplot() +
  aes(x = QB, y = IN) +
  geom_boxplot(fill = "#9ecae1") +
