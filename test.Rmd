@@ -14,7 +14,7 @@ meat
 Data wrangle
 
 ```{r}
-
+library(tidyverse)
 meat %>%
  filter(IN >= 383L & IN <= 469L) %>%
  filter(PL >= 22.5 & PL <= 27.3) %>%
