@@ -1,0 +1,28 @@
+---
+title: "R Notebook"
+output: html_notebook
+---
+
+Import Proc
+
+```{r}
+library(haven)
+meat <- read_sas("http://www.principlesofeconometrics.com/sas/meat.sas7bdat", 
+    NULL)
+meat
+```
+Data wrangle
+
+```{r}
+
+meat %>%
+ filter(IN >= 383L & IN <= 469L) %>%
+ filter(PL >= 22.5 & PL <= 27.2) %>%
+ ggplot() +
+ aes(x = QB, y = IN) +
+ geom_boxplot(fill = "#9ecae1") +
+ labs(x = "da", y = "dsf", title = "abcc", subtitle = "defd") +
+ theme_minimal()
+```
+
+
